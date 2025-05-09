@@ -14,6 +14,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 -  React
 -  TailwindCSS
+-  OpenWeatherMap API
 -  Vercel
 
 ## 🖱 Página publicada
