@@ -12,7 +12,6 @@ import { WeatherSearch } from './components/WeatherSearch'
 import { WeatherForecast } from './components/WeatherForecast'
 import { WeatherInformations } from './components/WeatherInformations'
 /** API */
-import keyAPI from './api/key'
 
 function App() {
 
@@ -26,10 +25,10 @@ function App() {
 
     const searchCity = async () => {
         const city = inputRef.current.value
-        const key = keyAPI
-        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&lang=pt_br&units=metric`
+        const keyAPI = "42bf7dc75a20866d9c4b93d35ee213a8"
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${keyAPI}&lang=pt_br&units=metric`
 
-        const url5Days = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${key}&lang=pt_br&units=metric`
+        const url5Days = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${keyAPI}&lang=pt_br&units=metric`
 
         const _apiInfo = await axios.get(url)
             .then(resp => {
