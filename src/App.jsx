@@ -12,7 +12,7 @@ import { WeatherSearch } from './components/WeatherSearch'
 import { WeatherForecast } from './components/WeatherForecast'
 import { WeatherInformations } from './components/WeatherInformations'
 /** API */
-import { keyAPI } from './api/key';
+import keyAPI from './api/key'
 
 function App() {
 
